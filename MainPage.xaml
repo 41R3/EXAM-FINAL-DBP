@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             
+             x:Class="FORMCV.MainPage">
+
+    <ScrollView>
+           
+           <StackLayout   BackgroundColor="CadetBlue">
+                  <Label Text="FORMULARIO PARA CV"  TextColor="Black"
+                         FontAttributes="Bold" HorizontalOptions="Center"
+                         VerticalOptions="Center" />
+                  <StackLayout Orientation="Vertical">
+                <Label Text="NOMBRE:"  TextColor="Black"
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Ingresa el nombre" x:Name="name"  TextColor="Black"
+                       FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="EDAD:"   TextColor="Black"
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Ingresa la edad" x:Name="age"  TextColor="Black"
+                       FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="DIRECCION:"  TextColor="Black"
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Ingresa la direccion" x:Name="adress"  TextColor="Black"
+                       FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="CONTACTO:"  TextColor="Black"
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Ingresa numero o email" x:Name="contact"  TextColor="Black"
+                       FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" x:Name="edu" >
+                <Label Text="EDUCACION"  TextColor="Black"
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Ingresa una institucion" x:Name="education"  TextColor="Black"
+                       FontAttributes="Bold" />
+            </StackLayout>
+            <Button Text="+"    Clicked="ButtonPlusEducationClicked" />
+            <StackLayout Orientation="Vertical" x:Name="ocup2" >
+                <Label Text="OCUPACION O EXP:"  TextColor="Black"
+                       FontAttributes="Bold" />
+                <Entry Placeholder="Ingresa tu ocupacion o experiencia" x:Name="ocupation"  TextColor="Black"
+                       FontAttributes="Bold" />
+            </StackLayout>
+            <Button Text="+"    Clicked="ButtonPlusOcupationClicked"/>
+            
+            <StackLayout>
+                <Button Text="REGISTRAR" Clicked="ButtonSubmitClicked" BackgroundColor="PaleVioletRed"  TextColor="Black"
+                        FontAttributes="Bold"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

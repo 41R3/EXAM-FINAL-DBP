@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="FORMCV.dinamicpage">
+    <ScrollView>
+   <Grid RowSpacing="0"
+          ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            
+        </Grid.ColumnDefinitions>
+       
+       
+       <!-- HEAD AND BOTTON-->
+        <BoxView Color="PaleVioletRed" />
+        <Label Text="FORMULARIO A CV" TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Column="1"
+                 Color="LightSeaGreen" />
+       <Button  Grid.Column="1" Text="Enviar Email " 
+                 TextColor="Black"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        
+       <!-- BODY -->
+        <BoxView Grid.Row="2"
+                 Color="CadetBlue" />
+        <Label Grid.Row="2"
+               Text="NOMBRE: " TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <BoxView Grid.Column="1" Grid.Row="2"
+                 Color="Thistle" />
+        <Label Grid.Column="1" Grid.Row="2"
+               Text="{Binding MainContentProperty1 }" TextColor="Black"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+       
+        <BoxView Grid.Row="3"
+                 Grid.Column="0"
+                 Color="CadetBlue" />
+        <Label Grid.Row="3"
+               Grid.Column="0"
+               Text="EDAD: " TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="3"
+                 Grid.Column="1"
+                 Color="Thistle" />
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="{Binding MainContentProperty2 }" TextColor="Black"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+       
+        <BoxView Grid.Row="4"
+                 Color="CadetBlue" />
+        <Label Grid.Row="4"
+               Text="DIRECCION" TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <BoxView Grid.Row="4"
+                 Grid.Column="1"
+                 Color="Thistle" />
+        <Label Grid.Row="4"
+               Grid.Column="1"
+               Text="{Binding MainContentProperty3}" TextColor="Black"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+       
+        <BoxView Grid.Row="5"
+                 Grid.Column="0"
+                 Color="CadetBlue" />
+        <Label Grid.Row="5"
+               Grid.Column="0"
+               Text="CONTACTO: " TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <BoxView Grid.Row="5"
+                 Grid.Column="1"
+                 Color="Thistle" />
+        <Label Grid.Row="5"
+               Grid.Column="1"
+               Text="{Binding MainContentProperty4 }" TextColor="Black"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+       
+        <BoxView Grid.Row="6"
+                 Grid.Column="0"
+                 Color="CadetBlue" />
+        <Label Grid.Row="6"
+               Grid.Column="0"
+               Text="EDUCACION: " TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        
+        <BoxView Grid.Row="6"
+                 Grid.Column="1"
+                 Color="Thistle" />
+       <Label Grid.Row="6"
+              Grid.Column="1"
+              Text="{Binding MainContentProperty5 }" TextColor="Black"
+              FontAttributes="Italic"
+              HorizontalOptions="Center"
+              VerticalOptions="Center" />
+       
+        <BoxView Grid.Row="7"
+                 Grid.Column="0"
+                 Color="CadetBlue" />
+        <Label Grid.Row="7"
+               Grid.Column="0"
+               Text="OCUPACION: " TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+       
+        <BoxView Grid.Row="7"
+                 Grid.Column="1"
+                 Color="Thistle" />
+       
+       <Label Grid.Row="7"
+              Grid.Column="1"
+              Text="{Binding MainContentProperty6 }" TextColor="Black"
+              FontAttributes="Italic"
+              HorizontalOptions="Center"
+              VerticalOptions="Center" />
+   </Grid>
+    </ScrollView>
+</ContentPage>
